@@ -1,0 +1,21 @@
+version: "2"
+
+services:
+  www.devbox:
+    build:
+      context: .
+      dockerfile: Dockerfile-www
+#    shm_size: 1g
+#    mem_limit: 1g
+    hostname: www.devbox
+    volumes:
+      - ./www:/var/www
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    environment:
+      - DISPLAY=${DISPLAY}
+    ports:
+      - "127.0.0.1:18080:8080"
+      - "127.0.0.1:18443:8443"
+    stdin_open: true
+    tty: true
+

@@ -1,0 +1,48 @@
+FROM ubuntu:latest
+
+ADD www /var/www
+WORKDIR /var/www
+
+ENV LANG C.UTF-8
+ENV LC_ALL C.UTF-8
+ENV LC_CTYPE C.UTF-8
+
+RUN apt update
+
+RUN apt -y install apt-utils
+RUN apt -y install vim
+RUN apt -y install curl
+RUN apt -y install screen
+RUN apt -y install bash
+RUN apt -y install wget
+RUN apt -y install git
+RUN apt -y install subversion
+RUN apt -y install htop
+RUN apt -y install gnupg
+RUN apt -y install procps
+RUN apt -y install sudo
+RUN apt -y install curl
+RUN apt -y install iputils-ping
+RUN apt -y install iproute2
+RUN apt -y install dnsutils
+RUN apt -y install net-tools
+RUN apt -y install libxcomposite-dev
+RUN apt -y install libxcursor1
+RUN apt -y install libxtst6
+RUN apt -y install libatk1.0-0
+RUN apt -y install libatk-bridge2.0-0
+RUN apt -y install libgdk-pixbuf2.0-0
+RUN apt -y install libgtk-3-0
+RUN apt -y install libasound2
+RUN apt -y install libx11-xcb1
+RUN apt -y install libxcb-dri3-0
+RUN apt -y install libnss3
+RUN apt -y install libdrm-dev
+RUN apt -y install libgbm1
+RUN apt -y install nodejs
+RUN apt -y install npm
+
+RUN npm install npm@latest -g
+RUN npm install electron -g --verbose --unsafe-perm=true --allow-root
+
+# your stuff here
