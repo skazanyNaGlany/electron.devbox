@@ -15,3 +15,10 @@ Your ```www/``` directory is mapped to container and is accessible via ```http:/
 ```
 
 NodeJS, NPM and Electron are installed by default.
+
+## Run Hello World example
+```
+$ ./devbox_shell.sh
+# npm install
+# npm start
+```
