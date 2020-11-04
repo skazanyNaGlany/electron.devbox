@@ -42,7 +42,13 @@ RUN apt -y install libgbm1
 RUN apt -y install nodejs
 RUN apt -y install npm
 
-RUN npm install npm@latest -g
+# update nodejs to latest version
+RUN npm cache clean -f
+RUN npm install -g n
+RUN n stable
+
+# install electron
 RUN npm install electron -g --verbose --unsafe-perm=true --allow-root
 
 # your stuff here
+
