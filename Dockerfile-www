@@ -39,6 +39,7 @@ RUN apt -y install libxcb-dri3-0
 RUN apt -y install libnss3
 RUN apt -y install libdrm-dev
 RUN apt -y install libgbm1
+RUN apt -y install libxss1
 RUN apt -y install nodejs
 RUN apt -y install npm
 
