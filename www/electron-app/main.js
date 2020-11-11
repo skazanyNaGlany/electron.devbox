@@ -9,13 +9,7 @@ function createWindow () {
     }
   })
 
-  // dialog.showMessageBox(win, {
-  //   message: '123'
-  // })
-
   win.loadFile('index.html')
-  // win.webContents.openDevTools({ mode: 'detach' })
-  // win.webContents.openDevTools()
 }
 
 app.whenReady().then(createWindow)

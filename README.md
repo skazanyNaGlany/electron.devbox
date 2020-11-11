@@ -16,9 +16,18 @@ Your ```www/``` directory is mapped to container and is accessible via ```http:/
 
 NodeJS, NPM and Electron are installed by default.
 
-## Run Hello World example
+## Run Electron Hello World example
 ```
 $ ./devbox_shell.sh
+# cd electron-app
 # npm install
 # npm start
+```
+
+## Run Electron Hello World example using Vue, Vuetify and TypeScript
+```
+$ ./devbox_shell.sh
+# cd vue-electron-app
+# npm install
+# npm run electron:serve
 ```
