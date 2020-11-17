@@ -2,7 +2,7 @@
 Simple development box for Electron apps.
 
 ## Prerequirement
-In order to allow Docker to connect to your host DISPLAY, please type in the terminal:
+In order to allow Docker to connect to your host DISPLAY, please type in host terminal:
 ```
 /usr/bin/xhost +local:root
 ```
